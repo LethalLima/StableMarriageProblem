@@ -42,7 +42,7 @@ bool BruteForceSM::wPrefersM1OverM(const unsigned & w, const unsigned & M, const
 BruteForceSM & BruteForceSM::printStableMatchSet(){
     std::cout << '[';
     for (unsigned i = 0; i < stableMatch.size(); i++){
-        std::cout << '(' << stableMatch[i].getM() << ',' << stableMatch[i].getW() << ')'
+        std::cout << '(' << stableMatch[i].getM()+1 << ',' << stableMatch[i].getW()+1 << ')'
         << (i + 1 < stableMatch.size() ? ", " : "]\n");
     }
     return *this;

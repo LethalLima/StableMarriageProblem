@@ -17,7 +17,7 @@ void load(std::ifstream & inputFile, std::vector< std::vector<unsigned> > & male
 int main(int argc, const char * argv[]){
     std::cout << "Brute Force Stable Matching Algorithm\n";
     
-    std::ifstream inputFile("resources/TestCase.txt");
+    std::ifstream inputFile("resources/Problem4.txt");
     if(inputFile.is_open()){
         unsigned N;
         inputFile >> N;
